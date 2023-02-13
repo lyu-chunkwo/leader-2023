@@ -1,0 +1,77 @@
+.achievements {
+  padding: 65px 0;
+  background-image: url(../images/progress/toon.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+  }
+
+  &__item {
+    max-width: 360px;
+    height: 290px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding-top: 125px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 85px;
+      height: 85px;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url(../images/progress/sprite.png);
+      background-position-x: 0;
+      background-position-y: 170px;
+    }
+
+    &--contracts {
+      &::before {
+        background-position-y: 0;
+      }
+    }
+
+    &--time {
+      &::before {
+        background-position-y: 255px;
+      }
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  &__num-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: 700;
+    @extend %gilroybold-700;
+  }
+
+  &__num {
+    margin-right: 3px;
+  }
+}
+
+.number {
+  opacity: 0;
+  transition: opacity 1s ease 0s;
+
+  &.visible {
+    opacity: 1;
+  }
+}

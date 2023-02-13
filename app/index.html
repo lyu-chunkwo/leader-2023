@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <title>Leader Consulting</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="scroll scroll-top">
+
+  <header class="header" id="top">
+    <nav class="header__nav">
+  <div class="container">
+    <div class="header__wrap">
+      <div class="header__nav-inner">
+        <a class="header__logo" href="#">
+          <img src="images/logo.png" class="header__logo-img" alt="Логотип">
+        </a>
+
+        <div class="header__top-box">
+          <ul class="header__menu">
+            <li class="header__item">
+              <a class="header__link" href="#info">Почему мы?</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#services">Услуги</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#cost">стоимость</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#team">Наша команда</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+
+          <a class="header__phone-link" href="tel:+996312311763">
+            <svg class="header__phone-svg" width="21" height="34">
+              <use xlink:href="images/svg-sprite/sprite.svg#phone-header"></use>
+            </svg>
+            +996 (312) 311 763
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+    <div class="modal fade" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"></button>
+      </div>
+
+      <h3 class="modal-title">Хочу попробовать</h3>
+
+      <div class="modal-body">
+        <form class="modal__form" action="#">
+          <div class="modal__inputs">
+            <input class="modal__input" type="email" placeholder="E-mail">
+            <input class="modal__input" type="text" placeholder="ФИО">
+            <input class="modal__input" type="tel" placeholder="Номер телефона">
+          </div>
+          <button class="modal__btn" type="submit">Оставить заявку</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+  </header>
+
+  <main class="main">
+    <section class="welcome">
+  <div class="container">
+    <div class="welcome__inner">
+      <h1 class="sr-only">Бухгалтерские услуги в Бишкеке</h1>
+      <h2 class="welcome__title">Пожалуй самая надежная бухгалтерия для предпринимателей!</h2>
+      <div class="welcome__subtitle">
+        <p>
+          Мы полностью возьмём на себя вашу бухгалтерию и поможем
+          в юридических вопросах, добавив сюда безупречный сервис
+        </p>
+      </div>
+
+      <button class="button" type="button" data-toggle="modal" data-target="#myModal">Хочу
+        попробовать</button>
+
+      <div class="welcome__img-box">
+        <div class="welcome__img-text">
+          <p>Наталья Викторовна</p>
+          <p>Руководитель компании «Лидер Консалтинг»</p>
+        </div>
+
+        <img class="welcome__img" src="images/top/welcome-img3.png" alt="Руководитель">
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="benefits">
+  <div class="container">
+    <div class="benefits__inner">
+      <ul class="benefits__list">
+        <li class="benefits__item benefits__item--sheet">
+          <h3 class="benefits__item-title">Освобождаем от текучки</h3>
+          <div class="benefits__text">
+            <p>
+              Бережно храним и оформляем документы, ведём учёт в 1С
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item benefits__item--briefcase">
+          <h3 class="benefits__item-title">Контролируем отчетность</h3>
+          <div class="benefits__text">
+            <p>
+              Вовремя сдаем отчетность в контролирующие органы, а также отраслевую отчетность для различного
+              производства (в том числе
+              для сельского хозяйства и РФИ) Подготовим отчетности для получения субсидий и грантов
+            </p>
+          </div>
+        </li>
+        <li class="benefits__item benefits__item--calendar">
+          <h3 class="benefits__item-title">Заботимся о ваших сотрудниках</h3>
+          <div class="benefits__text">
+            <p>
+              Устроим сотрудников, выплатим зарплату, отправим в отпуск
+            </p>
+          </div>
+        </li>
+      </ul>
+
+      <div class="benefits__box">
+        <h2 class="benefits__title">Почему работать с нами выгодно?</h2>
+        <button class="button" header__top-link" type="button" data-toggle="modal" data-target="#myModal">Хочу
+          попробовать</button>
+      </div>
+    </div>
+  </div>
+</section>
+    <div class="achievements">
+  <div class="container">
+    <ul class="achievements__items" id="counter">
+      <li class="achievements__item">
+        <div class="achievements__text">
+          <p>
+            Более восьми лет успешной работы на рынке бухгалтерских услуг
+          </p>
+        </div>
+        <div class="achievements__num-box">
+          <div class="achievements__num number" data-num="8">0</div>
+          <span class="achievments__plus">+</span>
+        </div>
+      </li>
+      <li class="achievements__item achievements__item--contracts">
+        <div class="achievements__text">
+          <p>
+            Более двухсот заключённых контрактов с компаниями осуществляющими разнообразную экономическую деятельность
+          </p>
+        </div>
+        <div class="achievements__num-box">
+          <div class="achievements__num number" data-num="200">0</div>
+          <span class="achievments__plus">+</span>
+        </div>
+      </li>
+      <li class="achievements__item achievements__item--time">
+        <div class="achievements__text">
+          <p>
+            Тысячи сэкономленных часов и денежных средств наших партнёров
+          </p>
+        </div>
+        <div class="achievements__num-box" id="info">
+          <div class="achievements__num number" data-num="1000">0</div>
+          <span class="achievments__plus">+</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+    <section class="info">
+  <div class="container">
+    <div class="info__inner">
+      <div class="info__btn-box">
+        <ul class="info__buttons-items">
+          <li class="info__button-item active" data-services="first">
+            <button class="info__btn" type="button">
+              Почему именно мы?
+            </button>
+          </li>
+          <li class="info__button-item" data-services="second">
+            <button class="info__btn" type="button">
+              Работаете по патенту или по Свидетельству ИП?
+            </button>
+          </li>
+          <li class="info__button-item" data-services="third">
+            <button class="info__btn" type="button">
+              Всеобщность налогового декларирования
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="info__tabs-wrap">
+        <ul class="info__tabs">
+          <li class="info__tabs-item info__tabs-item--first active">
+            <p>
+              «Деньги любят счет» — один из законов успешной деятельности любой компании. Правильно, грамотно и
+              оперативно
+              вести
+              бухгалтерский учет организации может только квалифицированный бухгалтер. Мы предлагаем бухгалтерские
+              услуги
+              высокопрофессионального уровня:
+            </p>
+
+            <ul class="info__text-list">
+              <li class="info__text-item">Бухгалтерское обслуживание (сопровождение)</li>
+              <li class="info__text-item">Постановка и восстановление учета</li>
+              <li class="info__text-item">Подготовка и подача отчетности</li>
+              <li class="info__text-item">Подача нулевых отчётов в контролирующие органы</li>
+            </ul>
+
+            <p>
+              Обратитесь к нам, и убедитесь в том, что аутсорсинг в бухгалтерии намного выгоднее, чем содержание
+              штатного
+              бухгалтера.
+              Ведение бухгалтерии привлеченным специалистом, не подразумевает никаких дополнительных затрат, кроме
+              оплаты
+              за
+              бухгалтерские услуги, в рамках суммы договора. Заработная плата, а также налоги и отчисления,
+              предусмотренные
+              действующим законодательством КР, больничные, отпускные и прочие выплаты – полностью отсутствуют.
+              Бухгалтерская
+              отчетность подается в установленные действующим законодательством срок, без форс-мажоров (внезапной
+              болезни
+              или других
+              уважительных причин).
+            </p>
+
+            <p>
+              Бухгалтерское обслуживание компаний осуществляется таким образом, что в случае возникновения каких-либо
+              непредвиденных
+              обстоятельств у одного из специалистов, все обязательства и работы может выполнить другой профессионал,
+              без
+              ущерба по
+              качеству и срокам. Несомненным, преимуществом является и то, что профессионалы, осуществляющие аутсорсинг
+              в
+              бухгалтерии,
+              регулярно повышают свой уровень знаний, постоянно и бдительно следят за изменениями законодательства в
+              области
+              налогового и бухгалтерского учета. Это позволяет значительно минимизировать риски от ошибок, с последующим
+              наложением
+              штрафов, и безупречно осуществлять бухгалтерское сопровождение на высоком профессиональном уровне. Вам
+              нужен
+              бухгалтер в
+              Бишкеке?
+            </p>
+
+            <p>
+              ОсОО «Лидер Консалтинг» – к вашим услугам! Мы гарантируем правильное ведение налогового учета и
+              полноценное
+              бухгалтерское сопровождение компаний и индивидуальных предпринимателей. Доверяя профессионалам, Вы
+              обезопасите свой
+              бизнес и будете спокойны за его успешность и прибыльность. Принимая во внимание тот факт, что в пределах
+              столицы
+              расположено внушительное количество различных субъектов бизнеса различной формы собственности, вовсе не
+              удивительно, что
+              бухгалтерские услуги характеризуются стабильно растущим спросом у различных компаний, ведущих свою
+              деятельность в
+              различных сегментах рынка.
+            </p>
+            <p>
+              Первоклассные бухгалтерские услуги – их востребованность, напрямую связана с
+              постоянно
+              меняющимся и трансформирующимся отечественным законодательством. Уследить за всеми изменениями и нюансами
+              без помощи
+              специалистов далеко не всегда возможно. Стоимость услуг бухгалтерского сопровождения может существенным
+              образом
+              отличаться. Однако, далеко не всегда высокий ценник автоматически является гарантией его безупречного
+              качества.
+              Стоимость на наши услуги традиционно отличается своей демократичной доступностью и приемлемостью для наших
+              клиентов –
+              как для юридических, так и для физических частных лиц. Несмотря на тот факт, что в пределах города Бишкек
+              стоимость
+              бухгалтерских услуг достаточно высоки, вниманию своих многоуважаемых клиентов, ОсОО «Лидер консалтинг»
+              традиционно
+              предлагает самые выгодные и самые оптимальные условия для ведения взаимовыгодного сотрудничества.
+            </p>
+            <p>
+              Стоимость
+              наших услуг
+              максимально приемлема и выгодна для многих субъектов, осуществляющих свою экономическую деятельность в
+              различных
+              направлениях столичного рынка товаров и услуг. А с введением системы цифровизации - и в любом регионе
+              нашего
+              Государства. Своим клиентам мы неизменно гарантируем первоклассное обслуживание и исключительно
+              индивидуальный подход.
+            </p>
+          </li>
+
+          <li class="info__tabs-item info__tabs-item--second">
+            <p>
+              Согласно Постановления Правительства КР № 609 от 11.11.2013г. Начиная с 01 января 2014г. все
+              индивидуальные
+              предприниматели, в том числе, работающие по патенту, обязаны вести бухгалтерский учёт и составлять
+              финансовую отчётность
+              (баланс, отчёт о прибылях и убытках, примечания к отчётам). А так-же сдавать налоговую декларацию в органы
+              налоговой
+              службы КР
+            </p>
+
+            <p>
+              Мы можем взять на себя ведение вашей бухгалтерии, формирование и сдачу отчетности в контролирующие Гос.
+              Органы. Или
+              дадим подробную консультацию, которая позволит Вам вести бухгалтерский учет и формировать отчётность
+              самостоятельно.
+            </p>
+
+            <p class="info__contacts">
+              Наши контакты:
+            </p>
+
+            <ul class="phone">
+              <div class="phone__box">
+                <li class="phone__item">
+                  <a class="phone__link" href="tel:+996312311763">
+                    +996 (312) 311 763
+                  </a>
+                </li>
+                <li class="phone__item">
+                  <a class="phone__link" href="tel:+996556188449">
+                    +996 (556) 188 449
+                  </a>
+                </li>
+              </div>
+              <div class="phone__box">
+                <li class="phone__item">
+                  <a class="phone__link" href="tel:+996779188449">
+                    +996 (779) 188 449
+                  </a>
+                </li>
+                <li class="phone__item">
+                  <a class="phone__link" href="tel:+996705188449">
+                    +996 (705) 188 449
+                  </a>
+                </li>
+              </div>
+            </ul>
+          </li>
+
+          <li class="info__tabs-item info__tabs-item--third">
+            <p>
+              В 2016 году произошли существенные изменения в наших гражданских правах и обязанностях как
+              налогоплательщиков. И это
+              изменение заключается в обязанности заполнить и сдать Единую налоговую декларацию по итогам предыдущего
+              года. Если ранее
+              Единую налоговую декларацию (далее – Декларация, ЕНД) обязаны были сдавать только лица, осуществляющие
+              предпринимательскую деятельность, либо имеющие в собственности облагаемое имущество, то сейчас по итогам
+              прошедшего года
+              ЕНД должны сдавать практически все граждане республики. Что же кроется за словами «практически все»? В
+              соответствии с
+              частью 4 статьи 8 Закона Кыргызской Республики «О введении в действие Налогового кодекса Кыргызской
+              Республики» по
+              итогам 2015 года, то есть с 2016 года, требования статьи 92 Налогового кодекса Кыргызской Республики по
+              представлению
+              Единой налоговой декларации будут распространяться на всех граждан КР, а также иностранных граждан и лиц
+              без
+              гражданства
+              — резидентов Кыргызской Республики, и нерезидентов, осуществляющих экономическую деятельность на
+              территории
+              страны.
+              К экономической деятельности относится предпринимательская деятельность и другая экономическая
+              деятельность.
+              Налоговое законодательство к «другой экономической деятельности» относит:
+
+            <ol class="info__num-list">
+              <li class="info__num-item">
+                осуществление деятельности в соответствии с трудовым законодательством Кыргызской Республики;
+              </li>
+              <li class="info__num-item">
+                вложение денежных средств в банки;
+              </li>
+              <li class="info__num-item">
+                приобретение, передача или продажа ценных бумаг, доли физического или юридического лица в уставном
+                капитале;
+              </li>
+              <li class="info__num-item">
+                получение любых выплат в соответствии с долей физического или юридического лица в уставном капитале
+                организации;
+              </li>
+              <li class="info__num-item">
+                получение неустоек, штрафа, возмещения морального вреда;
+              </li>
+              <li class="info__num-item">
+                получение страховой суммы (возмещения) по договорам страхования;
+              </li>
+              <li class="info__num-item">
+                иная деятельность, не являющаяся предпринимательской деятельностью
+              </li>
+            </ol>
+            </p>
+
+            <p>
+              К иной экономической деятельности, не являющейся предпринимательской, также относится, например, получение
+              доходов в
+              виде пенсий, стипендий, пособий, алиментов, наследства, кредитов и займов, а также выигрышей, получение
+              любых активов, в
+              том числе на безвозмездной основе, обладание облагаемыми и необлагаемыми объектами движимого и недвижимого
+              имущества,
+              земельными участками и др.
+              Таким образом, Декларацию должны будут сдать и неработающие пенсионеры, и студенты, получающие стипендию.
+              Более того, за
+              детей, получивших какой-либо доход или актив, например, пособие, наследство, Декларацию должны заполнить и
+              представить
+              их родители или опекуны.
+              Исходя из приведенных определений, становится ясно, что любой гражданин республики, а также ее резидент,
+              то
+              есть
+              иностранное лицо или лицо без гражданства, пребывающее в стране более 183 дней в течение 12
+              последовательных
+              месяцев, и
+              осуществляющий хотя бы один из названных видов экономической деятельности, является Декларантом, то есть,
+              обязан
+              заполнить и сдать Единую налоговую декларацию.
+              По предварительным оценкам Налоговой службы республики, количество Декларантов может доходить до 3,0 млн.
+              человек, что
+              превышает количество трудоспособных граждан страны.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="target">
+  <div class="container">
+    <ul class="target__box">
+      <li class="target__box-item">
+        <div class="target__boxitem-wrap">
+          <h3 class="target__title">Работаем с предпринимателями Кыргызстана, и бизнесменами из-за рубежа</h3>
+          <ul class="target__list">
+            <li class="target__item">У вас киоск “кофе с собой”?</li>
+            <li class="target__item">Парикмахерская или кафе?</li>
+            <li class="target__item">Продаёте оборудование или материалы?</li>
+            <li class="target__item">Занимаетесь программированием?</li>
+            <li class="target__item">Делаете сайты или рекламу?</li>
+            <li class="target__item">Фотографируете или снимаете видео?</li>
+          </ul>
+        </div>
+
+        <div class="target__img-box">
+          <img class="target__img" src="images/target/1.png" alt="target image">
+          <img class="target__img" src="images/target/2.png" alt="target image">
+          <img class="target__img" src="images/target/3.png" alt="target image">
+        </div>
+      </li>
+
+      <li class="target__box-item">
+        <div class="target__boxitem-wrap">
+          <h3 class="target__title">Нет бухгалтера в штате? Не проблема!</h3>
+          <div class="target__text">
+            <p>
+              Мы станем для вас надежным подспорьем и хорошим другом: Поможем зарегистрировать компанию, выберем
+              подходящую
+              систему
+              налогообложения и расскажем, как не заплатить слишком много налогов начинающему предпринимателю.
+            </p>
+          </div>
+        </div>
+
+        <div class="target__img-box">
+          <img class="target__img" src="images/target/4.png" alt="target image">
+          <img class="target__img" src="images/target/5.png" alt="target image">
+          <img class="target__img" src="images/target/6.png" alt="target image">
+        </div>
+      </li>
+
+      <li class="target__box-item">
+        <div class="target__boxitem-wrap">
+          <h3 class="target__title">Решили отдать бухгалтерию на аутсорсинг?</h3>
+          <div class="target__text">
+            <p>
+              Если вы по каким-то причинам решили сменить бухгалтера, то мы аккуратно примем базу, проверим ошибки и
+              поможем
+              восстановить учёт
+            </p>
+          </div>
+        </div>
+
+        <div class="target__img-box" id="services">
+          <img class="target__img" src="images/target/7.png" alt="target image">
+          <img class="target__img" src="images/target/8.png" alt="target image">
+          <img class="target__img" src="images/target/9.png" alt="target image">
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+    <section class="services">
+  <div class="container">
+    <div class="services__inner">
+      <h3 class="services__title">
+        Компания Leader consulting оказывает следующие бухгалтерские услуги:
+      </h3>
+      <div class="services__box">
+        <ul class="services__list">
+          <li class="services__item">
+            Постановка бухгалтерского учёта.
+          </li>
+          <li class="services__item">
+            Ведение бухгалтерского учёта.
+          </li>
+          <li class="services__item">
+            Налоговое планирование.
+          </li>
+          <li class="services__item">
+            Подготовка и сдача отчётности.
+          </li>
+          <li class="services__item">
+            Оптимизация налогообложения
+          </li>
+          <li class="services__item">
+            Расчёт заработной платы.
+          </li>
+          <li class="services__item">
+            Кадровый учёт.
+          </li>
+          <li class="services__item">
+            Восстановление бухгалтерского учёта.
+          </li>
+          <li class="services__item">
+            Сдача нулевых отчётов
+          </li>
+          <li class="services__item">
+            Регистрация и перерегистрация юридических лиц и индивидуальных предпринимателей.
+          </li>
+        </ul>
+
+        <div class="services__text">
+          <p>
+            У нас индивидуальный подход к каждому клиенту в сочетании с доступной стоимостью предоставляемых услуг.
+          </p>
+          <p class="services__bold">
+            Нас легко найти по адресу:
+          </p>
+          <address class="services__address">
+            г.Бишкек проспект Манаса 40 (на пересечении с ул.Киевской) 2 этаж,
+            кабинеты № 207, 208, 209, 210 в здании ОАО «Кыргызгипрострой».
+          </address>
+          <p class="services__bold">
+            На любые Ваши вопросы ответим по телефонам:
+          </p>
+
+          <ul class="phone phone--services">
+            <div class="phone__box">
+              <li class="phone__item phone__item--services">
+                <a class="phone__link" href="tel:+996312311763">
+                  +996 (312) 311 763
+                </a>
+              </li>
+              <li class="phone__item phone__item--services">
+                <a class="phone__link" href="tel:+996556188449">
+                  +996 (556) 188 449
+                </a>
+              </li>
+            </div>
+            <div class="phone__box">
+              <li class="phone__item phone__item--services">
+                <a class="phone__link" href="tel:+996779188449">
+                  +996 (779) 188 449
+                </a>
+              </li>
+              <li class="phone__item phone__item--services">
+                <a class="phone__link" href="tel:+996705188449">
+                  +996 (705) 188 449
+                </a>
+              </li>
+            </div>
+          </ul>
+          <p>
+            с 9:00 до 18:00 часов
+          </p>
+          <p>
+            Выходные дни: Суббота и Воскресенье.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="support">
+  <div class="container">
+    <div class="support__inner">
+      <ul class="support__items">
+        <li class="support__item">
+          <h3 class="support__title">Подскажем что лучше ИП или ОсОО</h3>
+          <div class="support__text">
+            Поможем выбрать наиболее выгодную форму организации для вашего бизнеса, учитывая все нюансы
+          </div>
+        </li>
+        <li class="support__item support__item--sec">
+          <h3 class="support__title">Подключим услуги юриста</h3>
+          <div class="support__text">
+            При решении любых вопросов вы сможете расчитывать на оперативную помощь бухгалтера и юриста
+          </div>
+        </li>
+        <li class="support__item support__item--third">
+          <h3 class="support__title">Подскажем в каком банке открыть счёт</h3>
+          <div class="support__text">
+            Поможем выбрать банк под необходимый бюджет и форму обслуживания
+          </div>
+        </li>
+        <li class="support__item support__item--fourth" id="cost">
+          <h3 class="support__title">На связи в течении всего рабочего дня</h3>
+          <div class="support__text">
+            По телефону, по электронной почте и даже в мессенджере
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="cost">
+  <div class="container">
+    <div class="cost__inner">
+      <h3 class="cost__title">Стоимость услуг ОсОО «Лидер Консалтинг»</h3>
+      <div class="cost__top">
+        <p>
+          Наименование услуги
+        </p>
+        <p>
+          Стоимость в месяц
+        </p>
+      </div>
+
+      <ol class="cost__list">
+        <li class="cost__item">
+          <div class="cost__sublist">
+            <div class="cost__subitem">
+              Подготовка и сдача нулевых отчетов
+              <span class="cost__span">от 1 500 сом</span>
+            </div>
+          </div>
+        </li>
+        <li class="cost__item">
+          <div class="cost__sublist">
+            <div class="cost__subitem">
+              Ведение бухгалтерского учета для Индивидуальных Предпринимателей
+              <span class="cost__span">от 3000 сом</span>
+            </div>
+          </div>
+        </li>
+        <li class="cost__item">
+          <div class="cost__sublist">
+            <div class="cost__subitem">
+              Ведение бухгалтерского учета для Юридических лиц, не являющихся плательщиками НДС
+              (торговля, сфера услуг)
+              <span class="cost__span">от 5000 сом</span>
+            </div>
+          </div>
+        </li>
+        <li class="cost__item">
+          <div class="cost__sublist">
+            <div class="cost__subitem">
+              Ведение бухгалтерского учета для Юридических лиц, являющихся плательщиками НДС
+              (торговля, сфера услуг)
+              <span class="cost__span">от 6000 сом</span>
+            </div>
+          </div>
+        </li>
+        <li class="cost__item">
+          <div class="cost__sublist">
+            <div class="cost__subitem">
+              Ведение бухгалтерского учета для Юридических лиц (строительство,
+              производство)
+              <span class="cost__span">от 8000 сом</span>
+            </div>
+          </div>
+        </li>
+        <li class="cost__item">
+          <div class="cost__sublist">
+            <div class="cost__subitem">
+              Восстановление учета
+              <span class="cost__span">Индивидуально</span>
+            </div>
+          </div>
+        </li>
+      </ol>
+
+      <div class="cost__text">
+        <p>
+          Более точная стоимость услуг устанавливается индивидуально,
+          путем переговоров, с учетом специфики деятельности
+          и объема документооборота каждого клиента.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="team" id="team">
+  <div class="container">
+    <div class="team__inner">
+      <h3 class="team__title">Наша команда!</h3>
+      <ul class="team__list">
+        <li class="team__item">
+          <img class="team__img" src="images/team/1.jpg" alt="Наталья Викторовна">
+          <div class="team__text-box">
+            <div class="team__name">Наталья Викторовна</div>
+            <div class="team__position">Руководитель компании</div>
+            <div class="team__text">
+              <p>
+                Окончила КНУ им. Ж. Баласагына, по специальности: бухгалтерский учет, анализ и аудит.
+              </p>
+              <p>
+                Стаж работы с
+                2001г
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="team__item">
+          <img class="team__img" src="images/team/2.jpg" alt="Мария">
+          <div class="team__text-box">
+            <div class="team__name">Мария</div>
+            <div class="team__position">Бухгалтер</div>
+            <div class="team__text">
+              <p>
+                Окончила ИУиБ при КГТУ по специальности бухгалтерский учет, в 2005 году.
+              </p>
+              <p>
+                Стаж работы с 2008 г.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="team__item">
+          <img class="team__img" src="images/team/3.jpg" alt="Гулира">
+          <div class="team__text-box">
+            <div class="team__name">Гулира</div>
+            <div class="team__position">Бухгалтер</div>
+            <div class="team__text">
+              <p>
+                Окончила МУК по специальности финансы и кредит.
+              </p>
+              <p>
+                Стаж работы с 2016г.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="team__item">
+          <img class="team__img" src="images/team/4.jpg" alt="Варвара">
+          <div class="team__text-box">
+            <div class="team__name">Варвара</div>
+            <div class="team__position">Бухгалтер</div>
+            <div class="team__text">
+              <p>
+                Окончила КГТУ им И. Раззакова, по специальности бухгалтерский учет, анализ, аудит.
+              </p>
+              <p>
+                Стаж работы с 2015г.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="team__item">
+          <img class="team__img" src="images/team/5.jpg" alt="Назгуль">
+          <div class="team__text-box">
+            <div class="team__name">Назгуль</div>
+            <div class="team__position">Бухгалтер</div>
+            <div class="team__text">
+              <p>
+                Окончила КГУСТА по специальности бухгалтерский учёт и аудит.
+              </p>
+              <p>
+                Стаж работы с 2017г.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="team__item">
+          <img class="team__img" src="images/team/6.jpg" alt="Екатерина">
+          <div class="team__text-box">
+            <div class="team__name">Екатерина</div>
+            <div class="team__position">Бухгалтер</div>
+            <div class="team__text">
+              <p>
+                Окончила Бишкекский филиал Московского института предпринимательства и права по специальности финансы и
+                кредит.
+              </p>
+              <p>
+                Стаж
+                работы с 2012г.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="team__item">
+          <img class="team__img" src="images/team/7.jpg" alt="Аида">
+          <div class="team__text-box">
+            <div class="team__name">Аида</div>
+            <div class="team__position">Бухгалтер</div>
+            <div class="team__text">
+              <p>
+                КГУСТА им Н.Исанова факультет Промышленная экология Спец, инженер Эколог 2003г.
+              </p>
+              <p>
+                Стаж работы с 2020г.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="team__item">
+          <img class="team__img" src="images/team/8.jpg" alt="Раушан">
+          <div class="team__text-box">
+            <div class="team__name">Раушан</div>
+            <div class="team__position">Бухгалтер</div>
+            <div class="team__text">
+              <p>
+                Окончила КНУ им. Ж. Баласагына по специальности: химик-технолог в 2017г.
+              </p>
+              <p>
+                Стаж работы с 2019 г.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="team__item">
+          <img class="team__img" src="images/team/9.jpg" alt="Нина">
+          <div class="team__text-box">
+            <div class="team__name">Нина</div>
+            <div class="team__position">Бухгалтер</div>
+            <div class="team__text">
+              <p>
+                Окончила "Кыргызский Национальный Университет имени Жусупа Баласагына" бухгалтерский учет и аудит.
+              </p>
+              <p>
+                Стаж
+                работы с 2004г.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="team__item">
+          <img class="team__img" src="images/team/10.jpg" alt="Гульмира">
+          <div class="team__text-box">
+            <div class="team__name">Гульмира</div>
+            <div class="team__position">Бухгалтер</div>
+            <div class="team__text">
+              <p>
+                Окончила "Чуйский Университет "бухгалтерский учет и аудит. КНУ имени Жусупа Баласагына" экономика
+                предприятия.
+              </p>
+              <p>
+                Стаж
+                работы с 2004г.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+    <section class="partners">
+  <div class="container">
+    <h3 class="partners__title">Наши партнёры!</h3>
+    <ul class="partners__list">
+      <li class="partners__item">
+        <div class="partners__wrap">
+          <img src="images/partners/1.webp" alt="partners" class="partners__img">
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__wrap">
+          <img src="images/partners/2.webp" alt="partners" class="partners__img">
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__wrap">
+          <img src="images/partners/3.webp" alt="partners" class="partners__img">
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__wrap">
+          <img src="images/partners/4.webp" alt="partners" class="partners__img">
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__wrap">
+          <img src="images/partners/5.webp" alt="partners" class="partners__img">
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__wrap">
+          <img src="images/partners/6.webp" alt="partners" class="partners__img">
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__wrap">
+          <img src="images/partners/7.webp" alt="partners" class="partners__img">
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__wrap">
+          <img src="images/partners/8.webp" alt="partners" class="partners__img">
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__wrap">
+          <img src="images/partners/9.webp" alt="partners" class="partners__img">
+        </div>
+      </li>
+      <li class="partners__item">
+        <div class="partners__wrap">
+          <img src="images/partners/10.webp" alt="partners" class="partners__img">
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+  </main>
+
+  <footer class="footer">
+    <div class="map">
+  <a class="dg-widget-link"
+    href="http://2gis.kg/bishkek/firm/70000001020205903/center/74.588001,42.875574/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть
+    на карте Бишкека</a>
+  <div class="dg-widget-link"><a
+      href="http://2gis.kg/bishkek/center/74.588001,42.875574/zoom/16/routeTab/rsType/bus/to/74.588001,42.875574╎Лидер Консалтинг, ОсОО, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
+      проезд до Лидер Консалтинг, ОсОО, компания</a></div>
+  <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
+  <script
+    charset="utf-8">new DGWidgetLoader({ "width": "100%", "height": 450, "borderColor": "#a3a3a3", "pos": { "lat": 42.875574, "lon": 74.588001, "zoom": 16 }, "opt": { "city": "bishkek" }, "org": [{ "id": "70000001020205903" }] });</script>
+  <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует JavaScript. Включите его в
+    настройках вашего браузера.</noscript>
+</div>
+
+<div class="container">
+  <div class="footer__inner" id="contacts">
+
+    <div class="footer__box">
+      <ul class="footer__items">
+        <li class="footer__item">
+          <h3 class="footer__item-title">Адрес:</h3>
+          <address class="footer__address">
+            г.Бишкек, проспект Манаса 40, офисы 207, 208, 209, 210
+          </address>
+
+          <a class="footer__video" data-fancybox
+            href="https://www.youtube.com/embed/zqkpis3BG7U?autoplay=1&controls=1&loop=1">
+            Видеоориентир
+          </a>
+
+          <div class="footer__text">
+            <p>Время работы: с 9:00 до 18:00</p>
+            <p>Выходные дни: суббота, воскресенье</p>
+          </div>
+        </li>
+
+        <li class="footer__item">
+
+          <div class="footer__email-box">
+            <h3 class="footer__item-title">Email:</h3>
+            <a class="footer__links footer__links--mail"
+              href="mailto:leader-consulting@mail.ru">leader-consulting@mail.ru</a>
+          </div>
+
+          <div class="footer__socials-box">
+            <h3 class="footer__item-title">Соцсети:</h3>
+            <ul class="footer__socials">
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <img class="footer__socials-img" src="images/socials/instagram.webp" alt="Instagram">
+                </a>
+              </li>
+              <li class="footer__socials-item">
+                <a class="footer__socials-link" href="#">
+                  <img class="footer__socials-img" src="images/socials/facebook.webp" alt="facebook">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="footer__item">
+          <h3 class="footer__item-title">Телефоны:</h3>
+
+          <ul class="footer__contacts">
+            <li class="footer__contacts-item">
+              <a class="footer__links footer__links--city" href="tel:+996312311763">+996 (312) 311 763</a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__links footer__links--mobile" href="tel:+996556188449">+996 (556) 188 449</a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__links footer__links--mobile" href="tel:+996779188449">+996(779) 188 449</a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__links footer__links--mobile" href="tel:+996705188449">+996 (705) 188 449</a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__links footer__links--wa" href="https://wa.me/+996552188449">+996 (552) 188 449</a>
+            </li>
+            <li class="footer__contacts-item">
+              <a class="footer__links footer__links--tg" href="https://telegram.me/LCBish_bot">@LCBish_bot</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="footer__bottom">
+  <div class="container">
+    <div class="footer__bottom-text">
+      <p>
+        Разработка сайта: Студия Webex
+        <a class="footer__bottom-link" href="mailto:inbox@webex.go.kg">inbox@webex.go.kg</a>
+      </p>
+      <p>Leader Consulting © 2014 - 2023г.</p>
+
+      <div class="footer__counter">
+        <script language="javascript" type="text/javascript">
+          java = "1.0";
+          java1 = "" + "refer=" + escape(document.referrer) + "&amp;page=" + escape(window.location.href);
+          document.cookie = "astratop=1; path=/";
+          java1 += "&amp;c=" + (document.cookie ? "yes" : "now");
+        </script>
+        <script language="javascript1.1" type="text/javascript">
+          java = "1.1";
+          java1 += "&amp;java=" + (navigator.javaEnabled() ? "yes" : "now");
+        </script>
+        <script language="javascript1.2" type="text/javascript">
+          java = "1.2";
+          java1 += "&amp;razresh=" + screen.width + 'x' + screen.height + "&amp;cvet=" +
+            (((navigator.appName.substring(0, 3) == "Mic")) ?
+              screen.colorDepth : screen.pixelDepth);
+        </script>
+        <script language="javascript1.3" type="text/javascript">java = "1.3"</script>
+        <script language="javascript" type="text/javascript">
+          java1 += "&amp;jscript=" + java + "&amp;rand=" + Math.random();
+          document.write("<a href='http://www.net.kg/stat.php?id=3770&amp;fromsite=3770' target='_blank'>" +
+            "<img src='http://www.net.kg/img.php?id=3770&amp;" + java1 +
+            "' border='0' alt='WWW.NET.KG' width='88' height='31' /></a>");
+        </script>
+        <noscript>
+          <a href='http://www.net.kg/stat.php?id=3770&amp;fromsite=3770' target='_blank'><img
+              src="http://www.net.kg/img.php?id=3770" border='0' alt='WWW.NET.KG' width='88' height='31' /></a>
+        </noscript>
+      </div>
+    </div>
+  </div>
+</div>
+  </footer>
+
+  <a class="up" href="#top">
+    <svg class="up__svg" width="40" height="40">
+      <use xlink:href="images/svg-sprite/sprite.svg#up"></use>
+    </svg>
+  </a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

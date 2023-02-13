@@ -1,0 +1,72 @@
+.cost {
+  padding: 65px 0;
+  background-image: url(../images/cost/cost-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    opacity: 0.9;
+  }
+
+  &__inner {
+    position: relative;
+    z-index: 10;
+    font-size: 18px;
+  }
+
+  &__title {
+    font-size: 22px;
+    color: #333;
+    @extend %gilroyblack-900;
+    margin-bottom: 20px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  &__list {
+    padding-left: 15px;
+    margin-bottom: 20px;
+  }
+
+  &__item {
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__subitem {
+    align-items: baseline;
+    display: flex;
+
+    &::before {
+      content: "";
+      border-bottom: 1px dashed #333;
+      flex-grow: 1;
+      order: 2;
+      margin: 0 5px;
+    }
+  }
+
+  &__span {
+    order: 3;
+  }
+  &__text {
+    font-weight: 700;
+  }
+}

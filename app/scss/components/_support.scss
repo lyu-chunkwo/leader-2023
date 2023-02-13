@@ -1,0 +1,66 @@
+.support {
+  background-image: linear-gradient(90.07deg, #ff0000 0.05%, #9e1818 95%);
+  padding: 85px 0 0;
+
+  &__inner {
+    color: #fff;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+  }
+
+  &__item-box {
+    margin: 0 15px;
+  }
+
+  &__item {
+    max-width: 570px;
+    padding-left: 110px;
+    margin-bottom: 100px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 90px;
+      height: 90px;
+      top: -5px;
+      left: 0;
+      background-image: url(../images/sprite/spritesheet.png);
+      background-position: -495px -220px;
+    }
+
+    &--sec {
+      &::before {
+        background-position: -615px -187px;
+      }
+    }
+
+    &--third {
+      &::before {
+        background-position: -495px -312px;
+      }
+    }
+
+    &--fourth {
+      &::before {
+        background-position: -405px -278px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    @extend %gilroyblack-900;
+  }
+
+  &__text {
+    font-size: 19px;
+  }
+}

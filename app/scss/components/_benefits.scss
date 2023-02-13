@@ -1,0 +1,75 @@
+.benefits {
+  background-image: linear-gradient(90.07deg, #9e1818 0.05%, #ff0000 95%);
+  padding: 85px 0;
+
+  &__inner {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    max-width: 475px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 90px;
+      height: 350px;
+      top: 0;
+      right: -175px;
+      background-image: url(../images/benefits/bracket.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__item {
+    margin-bottom: 25px;
+    padding-left: 90px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 60px;
+      background-image: url(../images/sprite/spritesheet.png);
+      background-repeat: no-repeat;
+      background-position: -408px -213px;
+      top: 0;
+      left: 0;
+    }
+
+    &--briefcase {
+      &::before {
+        background-position: -290px -59px;
+      }
+    }
+
+    &--calendar {
+      &::before {
+        background-position: -0px -169px;
+      }
+    }
+  }
+
+  &__item-title {
+    @extend %gilroyblack-900;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 1.125rem;
+    line-height: 1.4125rem;
+  }
+
+  &__title {
+    @extend %gilroyblack-900;
+    font-size: 2.8rem;
+    max-width: 450px;
+    margin-bottom: 35px;
+  }
+}

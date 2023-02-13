@@ -1,0 +1,198 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  @extend %ptsansregular-400;
+  color: $text;
+  font-size: 16px;
+  line-height: 1.5;
+  min-height: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+
+  &.lock {
+    overflow: hidden;
+  }
+}
+
+.section-title {
+  font-size: 30px;
+  color: $text;
+  font-weight: 400;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+input,
+textarea {
+  &:active,
+  &:focus {
+    outline: transparent;
+  }
+}
+
+button {
+  &:active,
+  &:focus {
+    outline: transparent;
+    cursor: pointer;
+  }
+}
+
+.button {
+  position: relative;
+  padding: 10px 70px;
+  display: inline-block;
+  background-image: linear-gradient(90.07deg, #9e1818 0.05%, #ff0000 75%);
+  @extend %gilroybold-700;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 10px;
+  border: 1px solid;
+  overflow: hidden;
+  z-index: 0;
+
+  &:after {
+    content: "";
+    background: #fff;
+    height: 155px;
+    left: -75px;
+    opacity: 0.2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+  }
+
+  &:hover {
+    color: #fff;
+
+    &::after {
+      left: 120%;
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+  }
+}
+
+// ! Скрывает заголовки и т.д. для СЕО
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+input,
+textarea {
+  &:focus {
+    box-shadow: 0 4px 20px rgba(31, 29, 29, 0.3);
+  }
+}
+
+.phone {
+  display: flex;
+
+  &--services {
+    margin-bottom: 10px;
+  }
+
+  &__item {
+    margin-bottom: 5px;
+    padding-left: 10px;
+    position: relative;
+
+    &--services {
+      padding-left: 23px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 18px;
+      height: 65px;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      background-image: url(../images/svg-sprite/sprite.svg#phone-accent);
+    }
+
+    &:hover {
+      color: $accent;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__box {
+    margin-right: 50px;
+  }
+
+  &__link {
+    color: $accent;
+  }
+}
+
+.up {
+  width: 70px;
+  height: 70px;
+  background-color: $accent;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid $accent;
+  transition: background-color 0.5s ease 0s, opacity 0.5s ease 0s;
+  opacity: 0;
+
+  &__svg {
+    fill: #fff;
+    transition: fill 0.5s ease 0s;
+  }
+
+  &:hover {
+    background-color: #fff;
+
+    .up__svg {
+      fill: $accent;
+    }
+  }
+}
+
+.scroll {
+  &.active {
+    .up {
+      opacity: 1;
+    }
+  }
+}

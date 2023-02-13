@@ -1,0 +1,71 @@
+$accent: #770b1b;
+$bg: #1c1c1c;
+$text: #4b4b4b;
+
+// ! Миксин для fancybox(video-popup), предотвращает ошибку gulp
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}
+
+// ! Миксин для ограничения строк текста
+@mixin line-clamp($lines: 1) {
+  @if $lines <=1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  } @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+  }
+}
+// ! Использование миксина
+// .class {
+//   @include line-clamp(3);
+// }
+
+// ! Шаблон для скрытия checkbox и radio buttons
+%checkbox-hidden,
+%radio-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+// ! Использование шаблона
+// @extend %checkbox-hidden;
+// @extend %radio-hidden;
+
+// ! Шаблон для Шрифта
+%gilroyregular-400 {
+  font-family: "Gilroyregular", sans-serif;
+  font-weight: 400;
+}
+
+%gilroybold-700 {
+  font-family: "Gilroy-bold", sans-serif;
+  font-weight: 700;
+}
+
+%gilroyblack-900 {
+  font-family: "Gilroyblack", sans-serif;
+  font-weight: 900;
+}
+
+%ptsansregular-400 {
+  font-family: "PTSans-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%ptsansbold-700 {
+  font-family: "PTSans-Bold", sans-serif;
+  font-weight: 700;
+}
+// ! Использование шаблона
+// @extend %font-name-400;

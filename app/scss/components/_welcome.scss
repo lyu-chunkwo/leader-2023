@@ -1,0 +1,54 @@
+.welcome {
+  padding: 90px 0;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__title {
+    max-width: 915px;
+    font-size: 52px;
+    @extend %gilroyblack-900;
+    line-height: 1;
+    color: #333;
+    margin-bottom: 40px;
+  }
+
+  &__subtitle {
+    max-width: 580px;
+    font-size: 21px;
+    line-height: 1.3;
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  &__img-box {
+    position: absolute;
+    bottom: -90px;
+    right: 0;
+  }
+
+  &__img-text {
+    position: absolute;
+    bottom: 40px;
+    left: -170px;
+
+    p {
+      font-size: 18px;
+      color: #333;
+      font-weight: 700;
+
+      &:last-child {
+        font-size: 16px;
+        font-weight: 400;
+        color: #999;
+        width: 170px;
+      }
+    }
+  }
+
+  &__img {
+    width: 450px;
+    object-fit: contain;
+  }
+}

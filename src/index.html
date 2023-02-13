@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+  <title>Leader Consulting</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="scroll scroll-top">
+
+  <header class="header" id="top">
+    @include('partials/header.html')
+    @include('partials/modal.html')
+  </header>
+
+  <main class="main">
+    @include('partials/welcome.html')
+    @include('partials/benefits.html')
+    @include('partials/achievements.html')
+    @include('partials/info.html')
+    @include('partials/target.html')
+    @include('partials/services.html')
+    @include('partials/support.html')
+    @include('partials/cost.html')
+    @include('partials/team.html')
+    @include('partials/partners.html')
+  </main>
+
+  <footer class="footer">
+    @include('partials/footer.html')
+  </footer>
+
+  <a class="up" href="#top">
+    <svg class="up__svg" width="40" height="40">
+      <use xlink:href="images/svg-sprite/sprite.svg#up"></use>
+    </svg>
+  </a>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

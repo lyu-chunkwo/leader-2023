@@ -1,0 +1,63 @@
+.services {
+  padding: 65px 0;
+  background-image: url(../images/progress/toon.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  font-size: 18px;
+
+  &__title {
+    font-size: 22px;
+    color: #333;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    @extend %gilroyblack-900;
+    max-width: 585px;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__list {
+    max-width: 560px;
+  }
+
+  &__item {
+    margin-bottom: 5px;
+    padding-left: 22px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 12px;
+      height: 10px;
+      left: 0;
+      top: 8px;
+      background-image: url(../images/ico/check.png);
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__text {
+    position: relative;
+    z-index: 10;
+    max-width: 585px;
+  }
+
+  &__bold {
+    font-weight: 700;
+    padding: 10px 0;
+  }
+
+  &__address {
+    margin-bottom: 0;
+  }
+}
